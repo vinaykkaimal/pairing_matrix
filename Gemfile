@@ -6,9 +6,11 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', '1.3.3'
+gem 'rspec-rails', '2.6.1'
 
 group :developement do
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate', '2.4.0'
 end
 
 group :test do
@@ -19,6 +21,7 @@ end
 
 # Use unicorn as the web server
 # gem 'unicorn'
+
 
 # Deploy with Capistrano
 # gem 'capistrano'
