@@ -1,10 +1,8 @@
 PairingMatrix::Application.routes.draw do
-  get "admin/home"
 
-  get "admin/matrix"
 
   root :to => "admin#home"
-  match "matrix" => "admin#matrix"
+  #match "matrix" => "admin#matrix"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
