@@ -30,6 +30,19 @@ describe AdminController do
       get 'matrix'
       response.should be_success
     end
+    it "should have a matrix" do
+      get 'matrix'
+      response.should have_selector("table")
+    end
+    it "should create new relationship for first timers" do
+
+
+    end
+    it "should update relationships" do
+
+
+    end
+
   end
 
 
