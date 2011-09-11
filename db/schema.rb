@@ -10,7 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110911045945) do
+ActiveRecord::Schema.define(:version => 20110911071440) do
+
+  create_table "relationships", :force => true do |t|
+    t.integer  "pairee_id"
+    t.integer  "pairer_id"
+    t.integer  "pairings"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "relationships", ["pairee_id", "pairer_id"], :name => "index_relationships_on_pairee_id_and_pairer_id", :unique => true
+  add_index "relationships", ["pairee_id"], :name => "index_relationships_on_pairee_id"
+  add_index "relationships", ["pairer_id"], :name => "index_relationships_on_pairer_id"
 
   create_table "t_workers", :force => true do |t|
     t.string   "name"
