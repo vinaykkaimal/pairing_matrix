@@ -6,8 +6,8 @@ describe Relationship do
 
     @pairer = Factory(:thot_worker, :name => "ash")
 
-    @relationship = @pairer.relationships.build(:pairee_id => @pairee.id)
-    @reverse_relationship = @pairee.reverse_relationships.build(:pairer_id => @pairer.id)
+    @relationship = @pairer.relationships.build(:pairee_id => @pairee.id, :pairings => 1)
+    @reverse_relationship = @pairee.reverse_relationships.build(:pairer_id => @pairer.id, :pairings => 1)
 
   end
   it "should create a new relationship given members of pair" do
@@ -48,5 +48,18 @@ describe Relationship do
       Relationship.find_by_id(@reverse_relationship.id).should be_nil
     end
   end
+  describe "find pairings" do
+    before(:each) do
+      @reverse_relationship.save
+    end
+    it "should return the right number of pairings" do
+      Relationship.find_pairings(@pairee, @pairer).pairings.should == 1
+    end
+    it "should return nil for people who haven't paired" do
+      @pairerer= Factory(:thot_worker, :name => "Piyush")
+      Relationship.find_pairings(@pairee, @pairerer).should be_nil
+    end
+  end
+
 
 end

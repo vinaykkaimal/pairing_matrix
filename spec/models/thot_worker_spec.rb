@@ -1,9 +1,17 @@
 require 'spec_helper'
 
 describe ThotWorker do
-  it "should create a new instance given a name" do
-    ThotWorker.create!(:name => "Vinay")
+  before(:each) do
+    @pairee = ThotWorker.create!(:name => "Vinay")
+    @pairer = ThotWorker.create!(:name => "Ash")
+    @relationship = @pairer.relationships.create(:pairee_id => @pairee.id, :pairings => 1)
+
   end
+
+
+
+
+
 end
 
 describe "relationships" do
