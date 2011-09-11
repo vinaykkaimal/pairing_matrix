@@ -7,5 +7,11 @@ class ThotWorker < ActiveRecord::Base
                            :class_name => "Relationship",
                            :dependent => :destroy
 
-
+  def self.pair(pairee, pairer)
+    if pairee.id<pairer.id
+      Relationship.update_pairings(pairee, pairer)
+    elsif pairer.id<pairee.id
+      Relationship.update_pairings(pairer, pairee)
+    end
+  end
 end
