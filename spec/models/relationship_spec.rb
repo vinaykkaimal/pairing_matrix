@@ -60,6 +60,19 @@ describe Relationship do
       Relationship.find_pairings(@pairee, @pairerer).should be_nil
     end
   end
-
+  describe "update pairings" do
+    before(:each) do
+      @relationship.save
+    end
+    it "should return the updated number of pairings" do
+      Relationship.update_pairings(@pairee, @pairer)
+      Relationship.find_pairings(@pairee, @pairer).pairings.should == 2
+    end
+    it "should create new pair for people who haven't paired" do
+      @pairerer= Factory(:thot_worker, :name => "Piyush")
+      Relationship.update_pairings(@pairee, @pairerer)
+      Relationship.find_pairings(@pairee, @pairerer).should_not be_nil
+    end
+  end
 
 end

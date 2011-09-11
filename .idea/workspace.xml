@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e450dbde-f381-40af-80d2-cc23d5365c04" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/relationship.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/relationships.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/t_worker.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/t_worker_spec.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/models/relationships_spec.rb" afterPath="$PROJECT_DIR$/spec/models/relationship_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thot_worker.rb" afterPath="$PROJECT_DIR$/app/models/thot_worker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" afterPath="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/relationship.rb" afterPath="$PROJECT_DIR$/app/models/relationship.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/relationship_spec.rb" afterPath="$PROJECT_DIR$/spec/models/relationship_spec.rb" />
     </list>
     <ignored path="pairing_matrix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +33,7 @@
       <file leaf-file-name="relationship_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/relationship_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="1" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.79820627">
+            <state line="55" column="78" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.4618834">
               <folding />
             </state>
           </provider>
@@ -91,7 +87,7 @@
       <file leaf-file-name="relationship.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/relationship.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+            <state line="15" column="60" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -684,14 +680,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/relationship.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+        <state line="15" column="60" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/relationship_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="1" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.79820627">
+        <state line="55" column="78" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.4618834">
           <folding />
         </state>
       </provider>
