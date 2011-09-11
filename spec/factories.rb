@@ -5,7 +5,7 @@ Factory.define :thot_worker do |thot_worker|
 end
 
 Factory.define :relationship do |relationship|
-  relationship.pairings 1
+
   relationship.association :thot_worker
 end
 
