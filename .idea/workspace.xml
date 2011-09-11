@@ -6,9 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/t_worker_spec.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thot_worker.rb" afterPath="$PROJECT_DIR$/app/models/thot_worker.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/relationships_spec.rb" afterPath="$PROJECT_DIR$/spec/models/relationships_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" afterPath="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" />
     </list>
     <ignored path="pairing_matrix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="thot_worker_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="thot_worker_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/thot_worker_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="8" selection-start="367" selection-end="479" vertical-scroll-proportion="0.0">
+            <state line="4" column="18" selection-start="116" selection-end="116" vertical-scroll-proportion="0.05899705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="relationships_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="relationships_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/relationships_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="24" selection-start="769" selection-end="769" vertical-scroll-proportion="0.38085938">
+            <state line="45" column="22" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,28 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20110911053721_create_relationships.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110911053721_create_relationships.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="20110911045945_create_thot_workers.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20110911045945_create_thot_workers.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="11" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110911071440_rename_relationship_to_relationships.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110911071440_rename_relationship_to_relationships.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -496,7 +476,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-5" width="1920" height="1205" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961932" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -609,23 +589,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/thot_worker_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="367" selection-end="479" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110911071440_rename_relationship_to_relationships.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="30" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/relationships.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -637,9 +603,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/relationships.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/relationships_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="769" selection-end="769" vertical-scroll-proportion="0.38085938">
+        <state line="45" column="22" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/thot_worker_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="116" selection-end="116" vertical-scroll-proportion="0.05899705">
           <folding />
         </state>
       </provider>

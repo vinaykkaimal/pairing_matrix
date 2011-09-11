@@ -10,10 +10,10 @@ describe Relationship do
     @reverse_relationship = @pairee.reverse_relationships.build(:pairer_id => @pairer.id)
 
   end
-  it "should create a new relationship given valid attributes" do
+  it "should create a new relationship given members of pair" do
     @relationship.save!
   end
-  it "should create a new reverse_relationship given valid attributes" do
+  it "should create a new reverse_relationship given members of pair" do
     @reverse_relationship.save!
   end
   describe "a relationship belongs to both members of pair" do
@@ -42,5 +42,11 @@ describe Relationship do
       @reverse_relationship.pairer.should == @pairer
 
     end
+    it "destroying a TWorker should destroy his relationships" do
+      @pairee.destroy
+      Relationship.find_by_id(@relationship.id).should be_nil
+      Relationship.find_by_id(@reverse_relationship.id).should be_nil
+    end
   end
+
 end
