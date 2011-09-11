@@ -6,8 +6,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/t_worker_spec.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/home.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="pairing_matrix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +42,7 @@
       <file leaf-file-name="admin_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="57" selection-end="57" vertical-scroll-proportion="0.04341534">
+            <state line="2" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.04341534">
               <folding />
             </state>
           </provider>
@@ -51,7 +51,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.125">
+            <state line="0" column="0" selection-start="0" selection-end="207" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -138,9 +138,9 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/matrix.html.erb" />
         <option value="$PROJECT_DIR$/spec/controllers/admin_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
       </list>
     </option>
   </component>
@@ -781,14 +781,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.125">
+        <state line="0" column="0" selection-start="0" selection-end="207" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="57" selection-end="57" vertical-scroll-proportion="0.04341534">
+        <state line="2" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.04341534">
           <folding />
         </state>
       </provider>
