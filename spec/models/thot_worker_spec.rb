@@ -16,4 +16,6 @@ describe "relationships" do
     it "should have a relationships method" do
       @pair.should respond_to(:relationships)
     end
+
+
 end
