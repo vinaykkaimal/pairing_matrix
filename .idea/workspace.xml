@@ -6,7 +6,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/t_worker_spec.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thot_worker.rb" afterPath="$PROJECT_DIR$/app/models/thot_worker.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" afterPath="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" />
     </list>
     <ignored path="pairing_matrix.iws" />
@@ -48,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thot_worker_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="thot_worker_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/thot_worker_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="56" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+            <state line="42" column="53" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.8206278">
               <folding />
             </state>
           </provider>
@@ -66,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thot_worker.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="thot_worker.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/thot_worker.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="91" selection-start="589" selection-end="589" vertical-scroll-proportion="0.29147983">
+            <state line="17" column="18" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,8 +146,8 @@
         <option value="$PROJECT_DIR$/spec/models/relationships_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/relationship.rb" />
         <option value="$PROJECT_DIR$/spec/models/relationship_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/thot_worker.rb" />
+        <option value="$PROJECT_DIR$/spec/models/thot_worker_spec.rb" />
       </list>
     </option>
   </component>
@@ -671,6 +670,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/thot_worker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="43" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
@@ -680,14 +686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/thot_worker_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="56" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/thot_worker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="91" selection-start="589" selection-end="589" vertical-scroll-proportion="0.29147983">
+        <state line="42" column="53" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.8206278">
           <folding />
         </state>
       </provider>

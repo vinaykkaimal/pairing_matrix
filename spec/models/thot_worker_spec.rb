@@ -39,6 +39,11 @@ describe "pair" do
       relation = ThotWorker.pair(@pairer,@pairee)
       Relationship.find_pairings(@pairee,@pairer).should == relation
     end
+    it "should create new pair for first timers" do
+      ThotWorker.pair(@pairee,@pairerer)
+      Relationship.find_pairings(@pairee,@pairerer).should_not be_nil
+    end
+
 
 
 end
