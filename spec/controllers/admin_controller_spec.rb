@@ -12,10 +12,16 @@ describe AdminController do
       response.should have_selector("input",
                                     :type => "submit")
     end
-    it "should have a textfield" do
+    it "should have a text field" do
       get 'home'
       response.should have_selector("input",
                                     :type => "text")
+    end
+
+    it "should route to the matrix page" do
+      get 'home'
+      response.should have_selector("form",
+                                    :action => "/matrix")
     end
   end
 
