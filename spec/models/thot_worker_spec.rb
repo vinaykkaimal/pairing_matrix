@@ -17,5 +17,7 @@ describe "relationships" do
       @pair.should respond_to(:relationships)
     end
 
-
+    it "should have a reverse_relationships method" do
+      @pair.should respond_to(:reverse_relationships)
+    end
 end

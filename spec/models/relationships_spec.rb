@@ -7,13 +7,15 @@ describe Relationship do
     @pairer = Factory(:thot_worker, :name => "ash")
 
     @relationship = @pairer.relationships.build(:pairee_id => @pairee.id)
-
+    @reverse_relationship = @pairee.reverse_relationships.build(:pairer_id => @pairer.id)
 
   end
   it "should create a new relationship given valid attributes" do
     @relationship.save!
   end
-
+  it "should create a new reverse_relationship given valid attributes" do
+    @reverse_relationship.save!
+  end
   describe "a relationship belongs to both members of pair" do
 
     before(:each) do
@@ -22,18 +24,23 @@ describe Relationship do
 
     it "should have a pairee attribute" do
       @relationship.should respond_to(:pairee)
+      @reverse_relationship.should respond_to(:pairee)
     end
 
     it "should have the right pairee" do
       @relationship.pairee.should == @pairee
+      @reverse_relationship.pairee.should == @pairee
     end
 
     it "should have a pairer attribute" do
       @relationship.should respond_to(:pairer)
+      @reverse_relationship.should respond_to(:pairer)
     end
 
-    it "should have the right followed user" do
+    it "should have the right pairer" do
       @relationship.pairer.should == @pairer
+      @reverse_relationship.pairer.should == @pairer
+
     end
   end
 end
