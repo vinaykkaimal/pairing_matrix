@@ -27,21 +27,21 @@ describe AdminController do
 
   describe "GET 'matrix'" do
     it "should be successful" do
+      mock_pairing = mock_model(Relationship)
+      ThotWorker.should_receive(:pair).any_number_of_times.and_return(mock_pairing)
       get 'matrix'
       response.should be_success
     end
     it "should have a matrix" do
+
+      mock_pairing = mock_model(Relationship)
+      ThotWorker.should_receive(:pair).any_number_of_times.and_return(mock_pairing)
       get 'matrix'
+
       response.should have_selector("table")
     end
-    it "should create new relationship for first timers" do
 
 
-    end
-    it "should update relationships" do
-
-
-    end
 
   end
 
