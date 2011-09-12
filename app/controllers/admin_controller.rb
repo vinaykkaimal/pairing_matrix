@@ -7,7 +7,7 @@ class AdminController < ApplicationController
   def matrix
     @pair = Pair.create(params[:pair])
     @index = Relationship.pair(ThotWorker.find_by_name(@pair.name1),ThotWorker.find_by_name(@pair.name2))
-    @index
+
   end
 
   def relation
