@@ -61,6 +61,33 @@ describe AdminController do
     end
   end
 
+  describe "GET 'pair_finder'" do
+    it "should be successful" do
+      get 'pair_finder'
+      response.should be_success
+    end
+    it "should have a submit button" do
+      get 'pair_finder'
+      response.should have_selector("input",
+                                    :type => "submit")
+    end
+    it "should have a text field" do
+      get 'pair_finder'
+      response.should have_selector("input",
+                                    :type => "text")
+    end
+
+    it "should route to the no_of_pairings page" do
+      get 'pair_finder'
+      response.should have_selector("form",
+                                    :action => "/no_of_pairings")
+    end
+  end
+
+
+
+
+
 
 
 end
