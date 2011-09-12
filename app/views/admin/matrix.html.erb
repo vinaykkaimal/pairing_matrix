@@ -1,3 +1,14 @@
 <h1>The Matrix</h1>
 
-<table></table>
+<table border="1">
+    <tr>
+        <th></th>
+        <th>Vinay</th>
+        <th>Ash</th>
+        <th>Piyush</th>
+    </tr>
+    <%= render :partial => 'row', :locals => { :index => 1 } %>
+    <%= render :partial => 'row', :locals => { :index => 3 } %>
+    <%= render :partial => 'row', :locals => { :index => 4 } %>
+</table>
+

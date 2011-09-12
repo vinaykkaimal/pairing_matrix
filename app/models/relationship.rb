@@ -11,6 +11,7 @@ class Relationship < ActiveRecord::Base
   def self.update_pairings(pairee, pairer)
     relation = find_pairings(pairee,pairer)
     if(!relation.nil?)
+
       relation.update_attributes(:pairings => (relation.pairings + 1))
     else
       pairer.relationships.create(:pairee_id => pairee.id, :pairings => 1)
