@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Relationship do
   before(:each) do
-    @pairee = Factory(:thot_worker)
+    @pairee = Factory(:thot_worker, :name => "Vinay")
 
     @pairer = Factory(:thot_worker, :name => "ash")
 
@@ -74,5 +74,36 @@ describe Relationship do
       Relationship.find_pairings(@pairee, @pairerer).should_not be_nil
     end
   end
+  describe "pair" do
+
+     before(:each) do
+       @pairerer = Factory(:thot_worker, :name => "Piyush")
+       @relationship = @pairer.relationships.build(:pairee_id => @pairee.id, :pairings => 1)
+     end
+
+     it "should update pairings" do
+       relation = Relationship.pair(@pairer,@pairee)
+       Relationship.find_pairings(@pairee,@pairer).should == relation
+     end
+     it "should create new pair for first timers" do
+       Relationship.pair(@pairee,@pairerer)
+       Relationship.find_pairings(@pairee,@pairerer).should_not be_nil
+     end
+  end
+
+  describe "times_paired" do
+     before(:each) do
+           @pairerer = Factory(:thot_worker, :name => "Piyush")
+           @relation = Relationship.pair(@pairer,@pairee)
+     end
+
+     it "should show  pairings" do
+           Relationship.times_paired(@pairee.id,@pairer.id).should == @relation.pairings
+     end
+     it "should return zero for first timers" do
+           Relationship.times_paired(@pairee.id,@pairerer.id).should_not be_nil
+     end
+  end
+
 
 end
