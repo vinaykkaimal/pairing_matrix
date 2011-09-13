@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe ThotWorker do
+describe ThoughtWorker do
   it "should create a new instance given a name" do
-    ThotWorker.create!(:name => "Vinay")
+    ThoughtWorker.create!(:name => "Vinay")
   end
   describe "relationships" do
 
       before(:each) do
-        @pair = ThotWorker.create(:name => "Vinay")
+        @pair = ThoughtWorker.create(:name => "Vinay")
 
       end
 

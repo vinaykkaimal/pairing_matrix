@@ -1,8 +1,8 @@
 class Relationship < ActiveRecord::Base
   attr_accessible :pairee_id, :pairer_id, :pairings
 
-  belongs_to :pairee, :class_name => "ThotWorker"
-  belongs_to :pairer, :class_name => "ThotWorker"
+  belongs_to :pairee, :class_name => "ThoughtWorker"
+  belongs_to :pairer, :class_name => "ThoughtWorker"
 
   def self.find_pairings(pairee, pairer)
     Relationship.find_by_pairee_id_and_pairer_id(pairee,pairer)
@@ -38,7 +38,7 @@ class Relationship < ActiveRecord::Base
   end
 
   def self.no_of_times(pair1,pair2)
-    times = Relationship.find_pairings(ThotWorker.find(pair1), ThotWorker.find(pair2))
+    times = Relationship.find_pairings(ThoughtWorker.find(pair1), ThoughtWorker.find(pair2))
         if !times.nil?
           times.pairings
         else

@@ -6,8 +6,7 @@ class AdminController < ApplicationController
 
   def matrix
     @pair = Pair.create(params[:pair])
-    @index = Relationship.pair(ThotWorker.find_by_name(@pair.name1),ThotWorker.find_by_name(@pair.name2))
-
+    @index = Relationship.pair(ThoughtWorker.find_by_name(@pair.name1),ThoughtWorker.find_by_name(@pair.name2))
   end
 
   def pair_finder
@@ -16,8 +15,7 @@ class AdminController < ApplicationController
 
   def no_of_pairings
     @pair = Pair.create(params[:pair])
-
-    @index = Relationship.times_paired(ThotWorker.find_by_name(@pair.name1).id, ThotWorker.find_by_name(@pair.name2).id)
+    @index = Relationship.times_paired(ThoughtWorker.find_by_name(@pair.name1).id, ThoughtWorker.find_by_name(@pair.name2).id)
 
   end
 

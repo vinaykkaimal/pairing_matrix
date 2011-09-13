@@ -1,4 +1,4 @@
-class ThotWorker < ActiveRecord::Base
+class ThoughtWorker < ActiveRecord::Base
   attr_accessible :name
   has_many :relationships, :foreign_key => "pairer_id",
                            :class_name => "Relationship",

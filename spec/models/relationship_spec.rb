@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe Relationship do
   before(:each) do
-    @pairee = Factory(:thot_worker, :name => "Vinay")
+    @pairee = Factory(:thought_worker, :name => "Vinay")
 
-    @pairer = Factory(:thot_worker, :name => "ash")
+    @pairer = Factory(:thought_worker, :name => "ash")
 
     @relationship = @pairer.relationships.build(:pairee_id => @pairee.id, :pairings => 1)
     @reverse_relationship = @pairee.reverse_relationships.build(:pairer_id => @pairer.id, :pairings => 1)
@@ -42,7 +42,7 @@ describe Relationship do
       @reverse_relationship.pairer.should == @pairer
 
     end
-    it "destroying a TWorker should destroy his relationships" do
+    it "destroying a ThoughtWorker should destroy his relationships" do
       @pairee.destroy
       Relationship.find_by_id(@relationship.id).should be_nil
       Relationship.find_by_id(@reverse_relationship.id).should be_nil
@@ -56,7 +56,7 @@ describe Relationship do
       Relationship.find_pairings(@pairee, @pairer).pairings.should == 1
     end
     it "should return nil for people who haven't paired" do
-      @pairerer= Factory(:thot_worker, :name => "Piyush")
+      @pairerer= Factory(:thought_worker, :name => "Piyush")
       Relationship.find_pairings(@pairee, @pairerer).should be_nil
     end
   end
@@ -69,7 +69,7 @@ describe Relationship do
       Relationship.find_pairings(@pairee, @pairer).pairings.should == 2
     end
     it "should create new pair for people who haven't paired" do
-      @pairerer= Factory(:thot_worker, :name => "Piyush")
+      @pairerer= Factory(:thought_worker, :name => "Piyush")
       Relationship.update_pairings(@pairee, @pairerer)
       Relationship.find_pairings(@pairee, @pairerer).should_not be_nil
     end
@@ -77,7 +77,7 @@ describe Relationship do
   describe "pair" do
 
      before(:each) do
-       @pairerer = Factory(:thot_worker, :name => "Piyush")
+       @pairerer = Factory(:thought_worker, :name => "Piyush")
        @relationship = @pairer.relationships.build(:pairee_id => @pairee.id, :pairings => 1)
      end
 
@@ -93,7 +93,7 @@ describe Relationship do
 
   describe "times_paired" do
      before(:each) do
-           @pairerer = Factory(:thot_worker, :name => "Piyush")
+           @pairerer = Factory(:thought_worker, :name => "Piyush")
            @relation = Relationship.pair(@pairer,@pairee)
      end
 

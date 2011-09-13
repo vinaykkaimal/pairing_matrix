@@ -1,12 +1,12 @@
 class Factories
 
-Factory.define :thot_worker do |thot_worker|
-  thot_worker.name                  "Vinay"
+Factory.define :thought_worker do |thought_worker|
+  thought_worker.name                  "Vinay"
 end
 
 Factory.define :relationship do |relationship|
 
-  relationship.association :thot_worker
+  relationship.association :thought_worker
 end
 
 end

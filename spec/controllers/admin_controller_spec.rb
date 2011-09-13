@@ -49,7 +49,7 @@ describe AdminController do
 
     it "should pass the value to the model" do
       Pair.should_receive(:create).with({"name1" => "Vinay", "name2" => "Ash"}).and_return(@mock_pair)
-      Relationship.should_receive(:pair).once.with(ThotWorker.find_by_name("Vinay"), ThotWorker.find_by_name("Ash"))
+      Relationship.should_receive(:pair).once.with(ThoughtWorker.find_by_name("Vinay"), ThoughtWorker.find_by_name("Ash"))
       post 'matrix', {"pair" => {"name1" => "Vinay", "name2" => "Ash"}}
     end
 
@@ -86,7 +86,7 @@ describe AdminController do
 
   describe "GET 'no_of_pairings'" do
     before(:each) do
-       @mock_pairing = mock(Relationship, :pairee_id => ThotWorker.find_by_name("Vinay").id, :pairer_id => ThotWorker.find_by_name("Ash").id, :pairings =>1)
+       @mock_pairing = mock(Relationship, :pairee_id => ThoughtWorker.find_by_name("Vinay").id, :pairer_id => ThoughtWorker.find_by_name("Ash").id, :pairings =>1)
        @mock_pair = mock(Pair, :name1 => "Vinay", :name2 => "Ash")
     end
     it "should be successful" do
@@ -103,7 +103,7 @@ describe AdminController do
 
     it "should pass the value to the model" do
       Pair.should_receive(:create).with({"name1" => "Vinay", "name2" => "Ash"}).and_return(@mock_pair)
-      Relationship.should_receive(:times_paired).once.with(ThotWorker.find_by_name("Vinay").id, ThotWorker.find_by_name("Ash").id)
+      Relationship.should_receive(:times_paired).once.with(ThoughtWorker.find_by_name("Vinay").id, ThoughtWorker.find_by_name("Ash").id)
       post 'no_of_pairings', {"pair" => {"name1" => "Vinay", "name2" => "Ash"}}
     end
 
