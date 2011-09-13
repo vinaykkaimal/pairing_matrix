@@ -16,7 +16,8 @@ class AdminController < ApplicationController
 
   def no_of_pairings
     @pair = Pair.create(params[:pair])
-    @index = Relationship.times_paired(ThotWorker.find_by_name(@pair.name1).id,ThotWorker.find_by_name(@pair.name2).id)
+
+    @index = Relationship.times_paired(ThotWorker.find_by_name(@pair.name1).id, ThotWorker.find_by_name(@pair.name2).id)
 
   end
 

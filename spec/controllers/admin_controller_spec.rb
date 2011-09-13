@@ -84,6 +84,38 @@ describe AdminController do
     end
   end
 
+  describe "GET 'no_of_pairings'" do
+    before(:each) do
+       @mock_pairing = mock(Relationship, :pairee_id => ThotWorker.find_by_name("Vinay").id, :pairer_id => ThotWorker.find_by_name("Ash").id, :pairings =>1)
+       @mock_pair = mock(Pair, :name1 => "Vinay", :name2 => "Ash")
+    end
+    it "should be successful" do
+      Relationship.should_receive(:times_paired).and_return(@mock_pairing)
+      post 'no_of_pairings', {"pair" => {"name1" => "Vinay", "name2" => "Ash"}}
+      response.should be_success
+    end
+
+    it "should get names from the form" do
+      Pair.should_receive(:create).with({"name1" => "Vinay", "name2" => "Ash"}).and_return(@mock_pair)
+      post 'no_of_pairings', {"pair" => {"name1" => "Vinay", "name2" => "Ash"}}
+      assigns[:pair].should == @mock_pair
+    end
+
+    it "should pass the value to the model" do
+      Pair.should_receive(:create).with({"name1" => "Vinay", "name2" => "Ash"}).and_return(@mock_pair)
+      Relationship.should_receive(:times_paired).once.with(ThotWorker.find_by_name("Vinay").id, ThotWorker.find_by_name("Ash").id)
+      post 'no_of_pairings', {"pair" => {"name1" => "Vinay", "name2" => "Ash"}}
+    end
+
+    it "should display the names and value in the view" do
+      post 'no_of_pairings', {"pair" => {"name1" => "Vinay", "name2" => "Ash"}}
+      response.should have_selector("h", :content => "Vinay")
+      response.should have_selector("h", :content => "Ash")
+      response.should have_selector("h", :content => "0")
+    end
+
+  end
+
 
 
 
